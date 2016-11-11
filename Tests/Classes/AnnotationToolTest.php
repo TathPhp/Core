@@ -15,9 +15,6 @@ class AnnotationToolTest extends \PHPUnit_Framework_TestCase
 {
     public function testRecycling()
     {
-        if (!class_exists(AnnotationA::class)) {
-            echo "wut?";
-        }
         $toolA = AnnotationTool::make(EntityClass::class);
         $toolB = AnnotationTool::make(EntityClass::class);
         $this->assertTrue($toolA === $toolB);
