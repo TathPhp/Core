@@ -7,6 +7,26 @@ using annotations, similarly to how Doctrine can create schema from annotations.
 **Tath and by extension Tath Core are under active development and the interface
 should not be considered stable.**
 
+Installation
+------------
+Since this is pre-release software I am not yet tagging version IDs. I will start
+using semver tags when the rest of Tath is also released and solid enough to use
+at least experimentally. For now, install with:
+
+    composer require tath/core:master@dev
+
+Why 'Tath'?
+-----------
+The idea for Tath comes from "Tortoise and the Hare". The code is written to be clear
+and easy to work with. It is not optimized for high performance. This is the Tortoise.
+It is written to facilitate rapid development, either for prototyping or for when
+high performance isn't a concern. This is the Hare.
+
+Tath is also a [real word](https://en.wiktionary.org/wiki/tath). It means "The dung of
+livestock left on a field to serve as manure or fertiliser." The library is intended
+to help in the development of CRUD (Create/Report/Update/Delete) applications, so you
+could also consider it "crap for your CRUD".
+
 AnnotationTool
 --------------
 This class wraps the Doctrine 
