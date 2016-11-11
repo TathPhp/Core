@@ -159,5 +159,6 @@ class AnnotationToolTest extends \PHPUnit_Framework_TestCase
         $this->assertCount(1, $annotations);
         $this->assertInstanceOf(AnnotationA::class, $annotations[0]);
         $this->assertCount(2, $bazTool->getClassAnnotations());
+        $this->assertCount(0, $fooTool->getClassAnnotationsOfType(AnnotationB::class));
     }
 }
