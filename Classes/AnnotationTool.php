@@ -28,7 +28,7 @@ class AnnotationTool
      * AnnotationTool constructor.
      * @param $type
      */
-    public function __construct($type)
+    private function __construct($type)
     {
         $this->type = $type;
         $this->reflectionClass = new \ReflectionClass($type);
