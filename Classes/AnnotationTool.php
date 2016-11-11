@@ -5,7 +5,7 @@ namespace Tath\Core\Classes;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 
-class AnnotationTool
+class AnnotationTool implements AnnotationToolInterface
 {
     use AnnotationToolTrait, AnnotationToolProperties, AnnotationToolMethods;
 
