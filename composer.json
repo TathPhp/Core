@@ -15,6 +15,7 @@
         }
     ],
     "require": {
+        "php": ">=7.0.0",
         "doctrine/common": "^2.6",
         "tightenco/collect": "^5.3"
     },
