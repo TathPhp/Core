@@ -24,6 +24,10 @@ trait AnnotationToolProperties
         foreach ($properties as $property) {
             $this->loadProperty($property);
         }
+        //If there are no annotations then this won't get created, so make an empty one here.
+        if (!isset($this->cache[self::PROPERTIES_BY_ANNOTATION])) {
+            $this->cache[self::PROPERTIES_BY_ANNOTATION] = [];
+        }
         return $this->cache;
     }
 
